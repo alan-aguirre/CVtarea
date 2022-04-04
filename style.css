@@ -1,6 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-/*===== VARIABLES CSS =====*/
+/*===== CSS =====*/
 :root{
   --header-height: 3rem;
   --font-semi: 600;
@@ -57,12 +57,12 @@
   --z-fixed: 100;
 }
 
-/*========== Button Dark/Light ==========*/
+/*========== Botones en navbar==========*/
 .nav__btns {
   display: flex;
   align-items: center;
 }
-
+/*========== Propiedades documento en generalr==========*/
 html{
   scroll-behavior: smooth;
 }
@@ -90,7 +90,7 @@ img{
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+/*===== Propiedades generaales de secciones ===== */
 .section-title{
   position: relative;
   font-size: var(--h2-font-size);
@@ -116,7 +116,7 @@ img{
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+/*===== Ajustes del layout =====*/
 .bd-grid{
   max-width: 1024px;
   display: grid;
@@ -144,10 +144,10 @@ img{
   z-index: var(--z-fixed);
 }
 .main{
-  overflow: hidden; /*For animation*/
+  overflow: hidden; 
 }
 
-/*===== NAV =====*/
+/*===== NavBar =====*/
 .nav{
   height: var(--header-height);
   display: flex;
@@ -228,7 +228,7 @@ img{
   cursor: pointer;
 }
 
-/*Active menu*/
+/*Indicador del menu*/
 .active-link::after{
   position: absolute;
   content: "";
@@ -249,7 +249,7 @@ img{
 }
 
 
-/*BUTTONS*/
+/*Formato de botones*/
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -313,7 +313,7 @@ padding-bottom: 2rem;
   color: var(--first-color);
 }
 
-/* ===== MEDIA QUERIES=====*/
+/* ===== MEDIA QUERIES (responsivo)=====*/
 @media screen and (min-width: 767px){
   body{
     margin: 0;
