@@ -230,8 +230,29 @@ img{
     color: var(--second-color);
 }
 .home__img{
- 
+    width: 400px;
 }
+
+/* ===== About =====*/
+.about{
+    padding-top: 3rem;
+}
+.about__title{
+    font-size:50px;
+    text-align:center;
+    color: var(--second-color);
+}
+.about__description{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+    color: var(--second-color);
+    text-align: justify;
+}
+.about__img{
+    width: 350px;
+}
+
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--navbar-bgcolor);
@@ -315,6 +336,21 @@ padding-bottom: 2rem;
 .home__description{
     font-size: 35px;
     color: var(--second-color);
+}
+.about__img{
+    width: 400px;
+}
+.about__title{
+    font-size:65px;
+    text-align:center;
+    color: var(--second-color);
+}
+.about__description{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 25px;
+    color: var(--second-color);
+    text-align: justify;
 }
 }
 @media screen and (min-width: 1024px){
