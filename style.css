@@ -499,6 +499,10 @@ padding-bottom: 2rem;
     color: var(--second-color);
     padding-top: 5rem;
 }
+.iframe{
+    width="560"; 
+    height="315"; 
+    }
 }
 @media screen and (min-width: 1024px){
   .bd-grid{
