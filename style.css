@@ -15,7 +15,7 @@
 --rectangle-firstcolor:#8BEEDA;
 --rectangle-secondcolor:#35A0F1;
 --bgcolor:#001020;
---navbar-bgcolor:#001020;
+--navbar-bgcolor:black;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -253,6 +253,138 @@ img{
     width: 350px;
 }
 
+/*==================== SKILLS ====================*/
+.skills__container {
+  row-gap: 0;
+  align-content: center;
+}
+.skill__title{
+    font-size:50px;
+    text-align:center;
+    color: var(--second-color);
+    padding-top: 3rem;
+}
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2);
+  cursor: pointer;
+}
+
+.skills__icon, .skills__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon {
+  margin-right: 0.75rem;
+}
+
+.skills__title {
+   font-size: 20px;
+    color: var(--second-color);
+    text-align: justify;
+}
+
+.skills__subtitle {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow {
+  transition: .4s;
+}
+
+.skills__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skills__name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--second-color);
+}
+.skills__number{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--second-color);
+}
+
+.skills__bar, .skills__percentage {
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills__bar {
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__html {
+  width: 80%;
+}
+
+.skills__css {
+  width: 70%;
+}
+
+.skills__js {
+  width: 60%;
+}
+
+.skills__react {
+  width: 25%;
+}
+
+.skills__fundamentals {
+  width: 80%;
+}
+
+.skills__NFT {
+  width: 55%;
+}
+
+.skills__trading {
+  width: 90%;
+}
+
+.skills__close .skills__list {
+  height: 0px;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: 2.5rem;
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
+
+/* ===== Schedule =====*/
+.schedule{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--second-color);
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 4rem;
+}
+th, td {
+  padding: 15px;
+}
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--navbar-bgcolor);
@@ -351,6 +483,12 @@ padding-bottom: 2rem;
     font-size: 25px;
     color: var(--second-color);
     text-align: justify;
+}
+.skill__title{
+    font-size:65px;
+    text-align:center;
+    color: var(--second-color);
+    padding-top: 5rem;
 }
 }
 @media screen and (min-width: 1024px){
