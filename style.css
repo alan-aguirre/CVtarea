@@ -14,12 +14,8 @@
 --nav-indexcolor:#73a9c2;
 --rectangle-firstcolor:#8BEEDA;
 --rectangle-secondcolor:#35A0F1;
---about-bgcolor:#001020;
+--bgcolor:#001020;
 --navbar-bgcolor:#001020;
---roadmap-bgcolor1:#001020;
---roadmap-bgcolor2:#394A81;
---table1:#091929;
---table2:#001020;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -70,8 +66,7 @@ body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
-  background-image: var(--body-image);
+  background-color: var(--bgcolor);
 }
 h1,h2,p{
   margin: 0;
@@ -90,31 +85,7 @@ img{
   display: block;
 }
 
-/*===== Propiedades generaales de secciones ===== */
-.section-title{
-  position: relative;
-  font-size: var(--h2-font-size);
-  color: var(--second-color);
-  margin-top: var(--mb-2);
-  padding-top: 4rem;
-  margin-bottom: var(--mb-4);
-  text-align: center;
-}
-.section-title::after{
-  position: absolute;
-  content: "";
-  width: 64px;
-  height: 0.18rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 6rem;
-  background-color: var(--first-color);
-}
-.section{
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
+/*===== Propiedades generales de secciones ===== */
 
 /*===== Ajustes del layout =====*/
 .bd-grid{
@@ -217,11 +188,6 @@ img{
   background-color: var(--nav-indexcolor);
 }
 
-.nav__logo img{
-  display: flex;
-  align-items: center;
-  width: 100px;
-}
 .nav__toggle{
   color: var(--nav-text-color);
   font-size: 1.5rem;
@@ -243,48 +209,29 @@ img{
   top: 0;
 }
 
-/* Change background header */
-.scroll-header{
-  background-color: black;
+/* ===== Landing =====*/
+.home{
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
 }
-
-
-/*Formato de botones*/
-.button{
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
-  transition: .3s;
+.home__text{
+  row-gap: 1rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem; 
 }
-.button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+.home__title{
+    font-size: 60px;
+    color: var(--second-color);
+    padding-bottom: 1rem;
 }
-.button--flex{
-  display: inline-flex;
-  align-items: center;
-  column-gap: .5rem;
+.home__description{
+    font-size: 25px;
+    color: var(--second-color);
 }
-.buttond{
-  display: inline-block;
-  background-color: #22284f;
-  color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
-  transition: .3s;
+.home__img{
+ 
 }
-.buttond:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
-}
-.buttond--flex{
-  display: inline-flex;
-  align-items: center;
-  column-gap: .5rem;
-}
-
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--navbar-bgcolor);
@@ -354,14 +301,30 @@ padding-bottom: 2rem;
   .nav__link{
     color: var(--nav-text-color);  
   }
-  
+  .home__text{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: initial;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+    .home__title{
+    font-size: 90px;
+    color: var(--second-color);
+}
+.home__description{
+    font-size: 35px;
+    color: var(--second-color);
+}
 }
 @media screen and (min-width: 1024px){
   .bd-grid{
     margin-left: auto;
     margin-right: auto;
   }
- 
+ .swiper-pagination{
+    margin-top: var(--mb-2-5);
+  }
     
 }
 
