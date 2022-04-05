@@ -385,6 +385,15 @@ img{
 th, td {
   padding: 15px;
 }
+
+/* ===== Clock =====*/
+.clock__title{
+    font-size:50px;
+    text-align:center;
+    color: var(--second-color);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--navbar-bgcolor);
